@@ -1,0 +1,429 @@
+{
+  "ranAt": "2026-11-16T06:19:04.869Z",
+  "ai": null,
+  "validators": [
+    {
+      "case": "h1-kit-one-sentence",
+      "what": "Final files: logo_colour.svg, logo_white.svg and the style sheet (styleguide.pdf).",
+      "type": "file-included",
+      "expected": "verified",
+      "observed": "verified",
+      "ok": true,
+      "class": "TN"
+    },
+    {
+      "case": "h2-missing-in-list-sentence",
+      "what": "Please send icon-16.png, icon-32.png and icon-64.png.",
+      "type": "file-included",
+      "expected": "blocking",
+      "observed": "not-found-in-scope",
+      "ok": true,
+      "class": "TP"
+    },
+    {
+      "case": "h3-markdown-outside-image",
+      "what": "The handover notes go in `README.md`.",
+      "type": "file-included",
+      "expected": "verified",
+      "observed": "verified",
+      "ok": true,
+      "class": "TN"
+    },
+    {
+      "case": "h3-markdown-outside-image",
+      "what": "references from 納品/README.md",
+      "type": "references-resolve",
+      "expected": "failed",
+      "observed": "failed",
+      "ok": true,
+      "class": "TP"
+    },
+    {
+      "case": "h3-markdown-outside-image",
+      "what": "references from 納品/CHANGES.md",
+      "type": "references-resolve",
+      "expected": "none",
+      "observed": "none",
+      "ok": true,
+      "class": "TN"
+    },
+    {
+      "case": "h4-wrong-size-plain-name",
+      "what": "Leaderboard banner, JPG, 970 x 250",
+      "type": "image-dimensions",
+      "expected": "failed",
+      "observed": "failed",
+      "ok": true,
+      "class": "TP"
+    },
+    {
+      "case": "h4-wrong-size-plain-name",
+      "what": "Avatar as `avatar.png`, 256×256",
+      "type": "image-dimensions",
+      "expected": "verified",
+      "observed": "verified",
+      "ok": true,
+      "class": "TN"
+    },
+    {
+      "case": "h5-signed-off-by-version",
+      "what": "Send the signed-off brochure PDF.",
+      "type": "approved-version",
+      "expected": "blocking",
+      "observed": "failed",
+      "ok": true,
+      "class": "TP"
+    },
+    {
+      "case": "h5-signed-off-by-version",
+      "what": "The approved flyer as `flyer.pdf`.",
+      "type": "approved-version",
+      "expected": "needs-review",
+      "observed": "needs-review",
+      "ok": true,
+      "class": "TP"
+    },
+    {
+      "case": "h6-quantity-conflict",
+      "what": "Deliver three icon sizes.",
+      "type": "manual",
+      "expected": "unresolved",
+      "observed": "needs-review",
+      "ok": true,
+      "class": "TP"
+    },
+    {
+      "case": "h6-quantity-conflict",
+      "what": "Only two icon sizes are needed now.",
+      "type": "manual",
+      "expected": "unresolved",
+      "observed": "needs-review",
+      "ok": true,
+      "class": "TP"
+    },
+    {
+      "case": "h7-damaged-required-image",
+      "what": "Layered artwork `mural.psd`.",
+      "type": "file-included",
+      "expected": "not-blocking",
+      "observed": "verified",
+      "ok": true,
+      "class": "n/a"
+    },
+    {
+      "case": "h7-damaged-required-image",
+      "what": "Mural preview `mural.png` at 2000×1000.",
+      "type": "image-dimensions",
+      "expected": "unable-to-inspect",
+      "observed": "unable-to-inspect",
+      "ok": true,
+      "class": "TP"
+    },
+    {
+      "case": "h8-optional-in-prose",
+      "what": "Poster `poster-a3.pdf`",
+      "type": "file-included",
+      "expected": "verified",
+      "observed": "verified",
+      "ok": true,
+      "class": "TN"
+    },
+    {
+      "case": "h8-optional-in-prose",
+      "what": "Stickers sheet `stickers.pdf` (bonus)",
+      "type": "file-included",
+      "expected": "open-not-blocking",
+      "observed": "not-found-in-scope",
+      "ok": true,
+      "class": "n/a"
+    },
+    {
+      "case": "h8-optional-in-prose",
+      "what": "If budget allows, a short animation (`intro.mp4`) would be welcome.",
+      "type": "file-included",
+      "expected": "open-not-blocking",
+      "observed": "not-found-in-scope",
+      "ok": true,
+      "class": "n/a"
+    }
+  ],
+  "validatorsByType": {
+    "file-included": {
+      "TP": 1,
+      "TN": 3,
+      "FP": 0,
+      "FN": 0,
+      "wrong-kind": 0,
+      "n/a": 3
+    },
+    "references-resolve": {
+      "TP": 1,
+      "TN": 1,
+      "FP": 0,
+      "FN": 0,
+      "wrong-kind": 0,
+      "n/a": 0
+    },
+    "image-dimensions": {
+      "TP": 2,
+      "TN": 1,
+      "FP": 0,
+      "FN": 0,
+      "wrong-kind": 0,
+      "n/a": 0
+    },
+    "approved-version": {
+      "TP": 2,
+      "TN": 0,
+      "FP": 0,
+      "FN": 0,
+      "wrong-kind": 0,
+      "n/a": 0
+    },
+    "manual": {
+      "TP": 2,
+      "TN": 0,
+      "FP": 0,
+      "FN": 0,
+      "wrong-kind": 0,
+      "n/a": 0
+    }
+  },
+  "readiness": [
+    {
+      "case": "h1-kit-one-sentence",
+      "track": "validators (answer-key promises)",
+      "expected": "Ready on checked items",
+      "observed": "Ready on checked items",
+      "ok": true
+    },
+    {
+      "case": "h2-missing-in-list-sentence",
+      "track": "validators (answer-key promises)",
+      "expected": "Fix before sending",
+      "observed": "Fix before sending",
+      "ok": true
+    },
+    {
+      "case": "h3-markdown-outside-image",
+      "track": "validators (answer-key promises)",
+      "expected": "Fix before sending",
+      "observed": "Fix before sending",
+      "ok": true
+    },
+    {
+      "case": "h4-wrong-size-plain-name",
+      "track": "validators (answer-key promises)",
+      "expected": "Fix before sending",
+      "observed": "Fix before sending",
+      "ok": true
+    },
+    {
+      "case": "h5-signed-off-by-version",
+      "track": "validators (answer-key promises)",
+      "expected": "Fix before sending",
+      "observed": "Fix before sending",
+      "ok": true
+    },
+    {
+      "case": "h6-quantity-conflict",
+      "track": "validators (answer-key promises)",
+      "expected": "Needs your review",
+      "observed": "Needs your review",
+      "ok": true
+    },
+    {
+      "case": "h7-damaged-required-image",
+      "track": "validators (answer-key promises)",
+      "expected": "Needs your review",
+      "observed": "Needs your review",
+      "ok": true
+    },
+    {
+      "case": "h8-optional-in-prose",
+      "track": "validators (answer-key promises)",
+      "expected": "Ready on checked items",
+      "observed": "Ready on checked items",
+      "ok": true
+    },
+    {
+      "case": "h1-kit-one-sentence",
+      "track": "end to end, fixed-rules extraction",
+      "expected": "Ready on checked items",
+      "observed": "Ready on checked items",
+      "ok": true
+    },
+    {
+      "case": "h2-missing-in-list-sentence",
+      "track": "end to end, fixed-rules extraction",
+      "expected": "Fix before sending",
+      "observed": "Fix before sending",
+      "ok": true
+    },
+    {
+      "case": "h3-markdown-outside-image",
+      "track": "end to end, fixed-rules extraction",
+      "expected": "Fix before sending",
+      "observed": "Fix before sending",
+      "ok": true
+    },
+    {
+      "case": "h4-wrong-size-plain-name",
+      "track": "end to end, fixed-rules extraction",
+      "expected": "Fix before sending",
+      "observed": "Fix before sending",
+      "ok": true
+    },
+    {
+      "case": "h5-signed-off-by-version",
+      "track": "end to end, fixed-rules extraction",
+      "expected": "Fix before sending",
+      "observed": "Fix before sending",
+      "ok": true
+    },
+    {
+      "case": "h6-quantity-conflict",
+      "track": "end to end, fixed-rules extraction",
+      "expected": "Needs your review",
+      "observed": "Needs your review",
+      "ok": true
+    },
+    {
+      "case": "h7-damaged-required-image",
+      "track": "end to end, fixed-rules extraction",
+      "expected": "Needs your review",
+      "observed": "Needs your review",
+      "ok": true
+    },
+    {
+      "case": "h8-optional-in-prose",
+      "track": "end to end, fixed-rules extraction",
+      "expected": "Ready on checked items",
+      "observed": "Ready on checked items",
+      "ok": true
+    }
+  ],
+  "extraction": [
+    {
+      "case": "h1-kit-one-sentence",
+      "method": "rules",
+      "run": 1,
+      "gold": 1,
+      "found": 1,
+      "missed": [],
+      "invented": [],
+      "applicabilityConfusion": [],
+      "ambiguous": [],
+      "citationsValid": 1,
+      "citations": 1,
+      "discardedNotInBrief": 0,
+      "ms": 0
+    },
+    {
+      "case": "h2-missing-in-list-sentence",
+      "method": "rules",
+      "run": 1,
+      "gold": 1,
+      "found": 1,
+      "missed": [],
+      "invented": [],
+      "applicabilityConfusion": [],
+      "ambiguous": [],
+      "citationsValid": 1,
+      "citations": 1,
+      "discardedNotInBrief": 0,
+      "ms": 0
+    },
+    {
+      "case": "h3-markdown-outside-image",
+      "method": "rules",
+      "run": 1,
+      "gold": 1,
+      "found": 1,
+      "missed": [],
+      "invented": [],
+      "applicabilityConfusion": [],
+      "ambiguous": [],
+      "citationsValid": 1,
+      "citations": 1,
+      "discardedNotInBrief": 0,
+      "ms": 0
+    },
+    {
+      "case": "h4-wrong-size-plain-name",
+      "method": "rules",
+      "run": 1,
+      "gold": 2,
+      "found": 2,
+      "missed": [],
+      "invented": [],
+      "applicabilityConfusion": [],
+      "ambiguous": [],
+      "citationsValid": 2,
+      "citations": 2,
+      "discardedNotInBrief": 0,
+      "ms": 0
+    },
+    {
+      "case": "h5-signed-off-by-version",
+      "method": "rules",
+      "run": 1,
+      "gold": 2,
+      "found": 2,
+      "missed": [],
+      "invented": [],
+      "applicabilityConfusion": [],
+      "ambiguous": [],
+      "citationsValid": 2,
+      "citations": 2,
+      "discardedNotInBrief": 0,
+      "ms": 0
+    },
+    {
+      "case": "h6-quantity-conflict",
+      "method": "rules",
+      "run": 1,
+      "gold": 2,
+      "found": 2,
+      "missed": [],
+      "invented": [],
+      "applicabilityConfusion": [],
+      "ambiguous": [],
+      "citationsValid": 2,
+      "citations": 2,
+      "discardedNotInBrief": 0,
+      "ms": 0
+    },
+    {
+      "case": "h7-damaged-required-image",
+      "method": "rules",
+      "run": 1,
+      "gold": 2,
+      "found": 2,
+      "missed": [],
+      "invented": [],
+      "applicabilityConfusion": [],
+      "ambiguous": [],
+      "citationsValid": 2,
+      "citations": 2,
+      "discardedNotInBrief": 0,
+      "ms": 0
+    },
+    {
+      "case": "h8-optional-in-prose",
+      "method": "rules",
+      "run": 1,
+      "gold": 3,
+      "found": 3,
+      "missed": [],
+      "invented": [],
+      "applicabilityConfusion": [],
+      "ambiguous": [],
+      "citationsValid": 3,
+      "citations": 3,
+      "discardedNotInBrief": 0,
+      "ms": 1
+    }
+  ],
+  "invariants": []
+}

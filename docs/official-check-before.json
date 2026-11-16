@@ -1,0 +1,77 @@
+{
+  "checkFormatVersion": "2.0.0",
+  "status": "not-uploadable",
+  "target": {
+    "skillName": "loose-ends"
+  },
+  "catalog": {
+    "checkedVersion": "2.2.0"
+  },
+  "files": [
+    {
+      "path": "references/checks.md",
+      "sha256": "418404784de2251f0dfd06b99a85b8a17607f83d8c171bf9bcb8be552dfd9d40"
+    },
+    {
+      "path": "references/disclosures.md",
+      "sha256": "4c99913ad28cdb7538e7908c32e90947285f39adb39a1da74f571a429ff25f04"
+    },
+    {
+      "path": "references/output-contract.md",
+      "sha256": "e38ad763aae61afc8fe81c36b467d5a90eca4d5c4211e0f9dc3dc01cd0ec2bb9"
+    },
+    {
+      "path": "SKILL.md",
+      "sha256": "89c489003ede38a068b1c0ba9f6a29a794427a8f0175944fd5a447d37c461efa"
+    }
+  ],
+  "summary": {
+    "errors": 5,
+    "warnings": 1,
+    "info": 0
+  },
+  "diagnostics": [
+    {
+      "code": "DELEGATION_RESULT_HANDLING_MISSING",
+      "severity": "error",
+      "file": "SKILL.md",
+      "message": "正文没有覆盖全部 delegation 公开状态：completed, cancelled, waiting_user, waiting_approval。",
+      "suggestion": "补充 completed、failed、cancelled、waiting_user、waiting_approval 的处理。"
+    },
+    {
+      "code": "DELEGATION_WORKFLOW_STATIC_VALIDATION_INCOMPLETE",
+      "severity": "warning",
+      "file": "SKILL.md",
+      "message": "正文中没有可机械识别的标准 delegate 命令。",
+      "suggestion": "人工确认该 Skill 是否无需 NAS 专家；需要时补充标准 delegate 命令。"
+    },
+    {
+      "code": "SKILL_REQUIRED_SECTION_MISSING",
+      "severity": "error",
+      "file": "SKILL.md",
+      "message": "SKILL.md 缺少必需章节：目标。",
+      "suggestion": "按编排型 Skill 契约补充该章节。"
+    },
+    {
+      "code": "SKILL_REQUIRED_SECTION_MISSING",
+      "severity": "error",
+      "file": "SKILL.md",
+      "message": "SKILL.md 缺少必需章节：必需输入。",
+      "suggestion": "按编排型 Skill 契约补充该章节。"
+    },
+    {
+      "code": "SKILL_REQUIRED_SECTION_MISSING",
+      "severity": "error",
+      "file": "SKILL.md",
+      "message": "SKILL.md 缺少必需章节：专家编排。",
+      "suggestion": "按编排型 Skill 契约补充该章节。"
+    },
+    {
+      "code": "SKILL_REQUIRED_SECTION_MISSING",
+      "severity": "error",
+      "file": "SKILL.md",
+      "message": "SKILL.md 缺少必需章节：完成与失败。",
+      "suggestion": "按编排型 Skill 契约补充该章节。"
+    }
+  ]
+}

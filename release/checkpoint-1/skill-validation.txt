@@ -1,0 +1,38 @@
+Loose Ends — Skill package validation
+Built: 2026-11-16T03:16:24.953Z
+ZIP: release/checkpoint-1/loose-ends-skill.zip (9031 bytes compressed, 20223 bytes uncompressed, 4 files)
+
+PASS  references/ contains only .md files
+INFO  files in skill/loose-ends not on the allowlist (excluded from ZIP): none
+PASS  SKILL.md starts with YAML frontmatter
+PASS  name is lowercase hyphenated, 2–64 chars — "loose-ends" (10)
+PASS  name is loose-ends
+PASS  description ≤ 1,024 characters — 582 chars
+PASS  frontmatter has exactly name, description — name,description
+PASS  linked file exists and is allowed: references/checks.md
+PASS  linked file exists and is allowed: references/output-contract.md
+PASS  linked file exists and is allowed: references/disclosures.md
+PASS  reference is directly linked from SKILL.md: references/checks.md
+PASS  reference is directly linked from SKILL.md: references/disclosures.md
+PASS  reference is directly linked from SKILL.md: references/output-contract.md
+PASS  SKILL.md under 1,000,000 bytes — 9617 bytes
+PASS  SKILL.md has no TODO/TBD/placeholder text
+PASS  SKILL.md has no credential-like strings
+PASS  references/checks.md under 1,000,000 bytes — 3764 bytes
+PASS  references/checks.md has no TODO/TBD/placeholder text
+PASS  references/checks.md has no credential-like strings
+PASS  references/disclosures.md under 1,000,000 bytes — 2669 bytes
+PASS  references/disclosures.md has no TODO/TBD/placeholder text
+PASS  references/disclosures.md has no credential-like strings
+PASS  references/output-contract.md under 1,000,000 bytes — 4173 bytes
+PASS  references/output-contract.md has no TODO/TBD/placeholder text
+PASS  references/output-contract.md has no credential-like strings
+PASS  file count ≤ 100 — 4 files
+PASS  unzip -t integrity
+PASS  ZIP entries equal the allowlist exactly — loose-ends/SKILL.md, loose-ends/references/checks.md, loose-ends/references/disclosures.md, loose-ends/references/output-contract.md
+PASS  root layout: single loose-ends/ folder, Markdown only
+PASS  compressed total under 10,000,000 bytes — 9031 bytes
+PASS  uncompressed total under 10,000,000 bytes — 20223 bytes
+
+RESULT: PASS (local format checks only)
+NOT CHECKED: the official UGOS Skill Creation Tool check has not been run; nothing has been executed on a UGREEN NAS.

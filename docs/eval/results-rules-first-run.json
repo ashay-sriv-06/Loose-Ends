@@ -1,0 +1,634 @@
+{
+  "ranAt": "2026-11-16T06:14:48.778Z",
+  "ai": null,
+  "validators": [
+    {
+      "case": "c1-brand-kit",
+      "what": "Primary logo as `lumière-logo.svg`.",
+      "type": "file-included",
+      "expected": "verified",
+      "observed": "verified",
+      "ok": true,
+      "class": "TN"
+    },
+    {
+      "case": "c1-brand-kit",
+      "what": "Inverse logo as lumière-logo-inverse.svg for dark backgrounds.",
+      "type": "file-included",
+      "expected": "verified",
+      "observed": "not-found-in-scope",
+      "ok": false,
+      "class": "FP"
+    },
+    {
+      "case": "c1-brand-kit",
+      "what": "Social banner `banner – wide.png` at 1200×630 px.",
+      "type": "image-dimensions",
+      "expected": "verified",
+      "observed": "verified",
+      "ok": true,
+      "class": "TN"
+    },
+    {
+      "case": "c1-brand-kit",
+      "what": "The brand guide as `Brand Guide.pdf`.",
+      "type": "file-included",
+      "expected": "verified",
+      "observed": "verified",
+      "ok": true,
+      "class": "TN"
+    },
+    {
+      "case": "c1-brand-kit",
+      "what": "All files must be self-contained.",
+      "type": "references-resolve",
+      "expected": "verified",
+      "observed": "verified",
+      "ok": true,
+      "class": "TN"
+    },
+    {
+      "case": "c1-brand-kit",
+      "what": "references from Final Export/Logos/lumière-logo.svg",
+      "type": "references-resolve",
+      "expected": "none",
+      "observed": "none",
+      "ok": true,
+      "class": "TN"
+    },
+    {
+      "case": "c2-missing-variant",
+      "what": "wordmark_primary.svg must be in the package.",
+      "type": "file-included",
+      "expected": "verified",
+      "observed": "needs-review",
+      "ok": false,
+      "class": "FP"
+    },
+    {
+      "case": "c2-missing-variant",
+      "what": "wordmark_mono.svg (single-colour version) is required as well.",
+      "type": "file-included",
+      "expected": "blocking",
+      "observed": "not-found-in-scope",
+      "ok": true,
+      "class": "TP"
+    },
+    {
+      "case": "c2-missing-variant",
+      "what": "Supply usage_notes.md.",
+      "type": "file-included",
+      "expected": "verified",
+      "observed": "verified",
+      "ok": true,
+      "class": "TN"
+    },
+    {
+      "case": "c3-svg-omitted-asset",
+      "what": "As agreed, you'll get the emblem as a vector file (SVG).",
+      "type": "file-included",
+      "expected": "verified",
+      "observed": "not-found-in-scope",
+      "ok": false,
+      "class": "FP"
+    },
+    {
+      "case": "c3-svg-omitted-asset",
+      "what": "The badge comes as an SVG as well.",
+      "type": "file-included",
+      "expected": "verified",
+      "observed": "not-found-in-scope",
+      "ok": false,
+      "class": "FP"
+    },
+    {
+      "case": "c3-svg-omitted-asset",
+      "what": "references from Deliverables (client)/vector/emblem.svg",
+      "type": "references-resolve",
+      "expected": "failed",
+      "observed": "failed",
+      "ok": true,
+      "class": "TP"
+    },
+    {
+      "case": "c3-svg-omitted-asset",
+      "what": "references from Deliverables (client)/vector/badge.svg",
+      "type": "references-resolve",
+      "expected": "none",
+      "observed": "none",
+      "ok": true,
+      "class": "TN"
+    },
+    {
+      "case": "c4-misleading-name",
+      "what": "Instagram story graphic, PNG, 1080×1920 px",
+      "type": "image-dimensions",
+      "expected": "failed",
+      "observed": "not-found-in-scope",
+      "ok": false,
+      "class": "wrong-kind"
+    },
+    {
+      "case": "c4-misleading-name",
+      "what": "Square post, JPG, 1080 by 1080",
+      "type": "image-dimensions",
+      "expected": "verified",
+      "observed": "verified",
+      "ok": true,
+      "class": "TN"
+    },
+    {
+      "case": "c4-misleading-name",
+      "what": "Thumbnail `thumb.png` at 400 x 400",
+      "type": "image-dimensions",
+      "expected": "verified",
+      "observed": "verified",
+      "ok": true,
+      "class": "TN"
+    },
+    {
+      "case": "c5-approved-older",
+      "what": "Deliver the client-approved packaging dieline as `packaging-dieline.pdf`.",
+      "type": "approved-version",
+      "expected": "failed",
+      "observed": "failed",
+      "ok": true,
+      "class": "TP"
+    },
+    {
+      "case": "c5-approved-older",
+      "what": "Deliver the approved front label `label-front.pdf`.",
+      "type": "approved-version",
+      "expected": "verified",
+      "observed": "verified",
+      "ok": true,
+      "class": "TN"
+    },
+    {
+      "case": "c6-conflict",
+      "what": "Hero banner `hero.png` at 1600×900 px.",
+      "type": "image-dimensions",
+      "expected": "scope-conflict",
+      "observed": "scope-conflict",
+      "ok": true,
+      "class": "TP"
+    },
+    {
+      "case": "c6-conflict",
+      "what": "The hero banner `hero.png` must be 1920×1080 px.",
+      "type": "image-dimensions",
+      "expected": "scope-conflict",
+      "observed": "scope-conflict",
+      "ok": true,
+      "class": "TP"
+    },
+    {
+      "case": "c6-conflict",
+      "what": "Footer logo `footer-logo.svg`.",
+      "type": "file-included",
+      "expected": "verified",
+      "observed": "verified",
+      "ok": true,
+      "class": "TN"
+    },
+    {
+      "case": "c7-unsupported-source",
+      "what": "Print-ready `poster.pdf`.",
+      "type": "file-included",
+      "expected": "verified",
+      "observed": "verified",
+      "ok": true,
+      "class": "TN"
+    },
+    {
+      "case": "c7-unsupported-source",
+      "what": "The editable source `poster.indd` must be included.",
+      "type": "file-included",
+      "expected": "not-blocking",
+      "observed": "verified",
+      "ok": true,
+      "class": "n/a"
+    },
+    {
+      "case": "c8-optional",
+      "what": "The printed menu as `menu.pdf`.",
+      "type": "file-included",
+      "expected": "verified",
+      "observed": "verified",
+      "ok": true,
+      "class": "TN"
+    },
+    {
+      "case": "c8-optional",
+      "what": "An animated teaser `menu-teaser.gif`.",
+      "type": "file-included",
+      "expected": "open-not-blocking",
+      "observed": "not-found-in-scope",
+      "ok": true,
+      "class": "n/a"
+    },
+    {
+      "case": "c8-optional",
+      "what": "Optional: a favicon `favicon.png`.",
+      "type": "file-included",
+      "expected": "open-not-blocking",
+      "observed": "not-found-in-scope",
+      "ok": true,
+      "class": "n/a"
+    }
+  ],
+  "validatorsByType": {
+    "file-included": {
+      "TP": 1,
+      "TN": 6,
+      "FP": 4,
+      "FN": 0,
+      "wrong-kind": 0,
+      "n/a": 3
+    },
+    "image-dimensions": {
+      "TP": 2,
+      "TN": 3,
+      "FP": 0,
+      "FN": 0,
+      "wrong-kind": 1,
+      "n/a": 0
+    },
+    "references-resolve": {
+      "TP": 1,
+      "TN": 3,
+      "FP": 0,
+      "FN": 0,
+      "wrong-kind": 0,
+      "n/a": 0
+    },
+    "approved-version": {
+      "TP": 1,
+      "TN": 1,
+      "FP": 0,
+      "FN": 0,
+      "wrong-kind": 0,
+      "n/a": 0
+    }
+  },
+  "readiness": [
+    {
+      "case": "c1-brand-kit",
+      "track": "validators (answer-key promises)",
+      "expected": "Ready on checked items",
+      "observed": "Fix before sending",
+      "ok": false
+    },
+    {
+      "case": "c2-missing-variant",
+      "track": "validators (answer-key promises)",
+      "expected": "Fix before sending",
+      "observed": "Fix before sending",
+      "ok": true
+    },
+    {
+      "case": "c3-svg-omitted-asset",
+      "track": "validators (answer-key promises)",
+      "expected": "Fix before sending",
+      "observed": "Fix before sending",
+      "ok": true
+    },
+    {
+      "case": "c4-misleading-name",
+      "track": "validators (answer-key promises)",
+      "expected": "Fix before sending",
+      "observed": "Fix before sending",
+      "ok": true
+    },
+    {
+      "case": "c5-approved-older",
+      "track": "validators (answer-key promises)",
+      "expected": "Fix before sending",
+      "observed": "Fix before sending",
+      "ok": true
+    },
+    {
+      "case": "c6-conflict",
+      "track": "validators (answer-key promises)",
+      "expected": "Needs your review",
+      "observed": "Needs your review",
+      "ok": true
+    },
+    {
+      "case": "c7-unsupported-source",
+      "track": "validators (answer-key promises)",
+      "expected": "Needs your review",
+      "observed": "Needs your review",
+      "ok": true
+    },
+    {
+      "case": "c7b-unsupported-brief",
+      "track": "validators (answer-key promises)",
+      "expected": "Could not complete check",
+      "observed": "Ready on checked items",
+      "ok": false
+    },
+    {
+      "case": "c8-optional",
+      "track": "validators (answer-key promises)",
+      "expected": "Ready on checked items",
+      "observed": "Ready on checked items",
+      "ok": true
+    },
+    {
+      "case": "c6-conflict",
+      "track": "decision: follow scope/Change request 02.md (hero verified, expected verified)",
+      "expected": "Ready on checked items",
+      "observed": "Ready on checked items",
+      "ok": true
+    },
+    {
+      "case": "c6-conflict",
+      "track": "decision: follow scope/SOW.md (hero failed, expected failed)",
+      "expected": "Fix before sending",
+      "observed": "Fix before sending",
+      "ok": true
+    },
+    {
+      "case": "c1-brand-kit",
+      "track": "end to end, fixed-rules extraction",
+      "expected": "Ready on checked items",
+      "observed": "Fix before sending",
+      "ok": false
+    },
+    {
+      "case": "c2-missing-variant",
+      "track": "end to end, fixed-rules extraction",
+      "expected": "Fix before sending",
+      "observed": "Fix before sending",
+      "ok": true
+    },
+    {
+      "case": "c3-svg-omitted-asset",
+      "track": "end to end, fixed-rules extraction",
+      "expected": "Fix before sending",
+      "observed": "Fix before sending",
+      "ok": true
+    },
+    {
+      "case": "c4-misleading-name",
+      "track": "end to end, fixed-rules extraction",
+      "expected": "Fix before sending",
+      "observed": "Ready on checked items",
+      "ok": false
+    },
+    {
+      "case": "c5-approved-older",
+      "track": "end to end, fixed-rules extraction",
+      "expected": "Fix before sending",
+      "observed": "Fix before sending",
+      "ok": true
+    },
+    {
+      "case": "c6-conflict",
+      "track": "end to end, fixed-rules extraction",
+      "expected": "Needs your review",
+      "observed": "Needs your review",
+      "ok": true
+    },
+    {
+      "case": "c7-unsupported-source",
+      "track": "end to end, fixed-rules extraction",
+      "expected": "Needs your review",
+      "observed": "Needs your review",
+      "ok": true
+    },
+    {
+      "case": "c7b-unsupported-brief",
+      "track": "end to end, fixed-rules extraction",
+      "expected": "Could not complete check",
+      "observed": "Ready on checked items",
+      "ok": false
+    },
+    {
+      "case": "c8-optional",
+      "track": "end to end, fixed-rules extraction",
+      "expected": "Ready on checked items",
+      "observed": "Ready on checked items",
+      "ok": true
+    }
+  ],
+  "extraction": [
+    {
+      "case": "c1-brand-kit",
+      "method": "rules",
+      "run": 1,
+      "gold": 5,
+      "found": 5,
+      "missed": [],
+      "invented": [],
+      "applicabilityConfusion": [],
+      "ambiguous": [],
+      "citationsValid": 5,
+      "citations": 5,
+      "discardedNotInBrief": 0,
+      "ms": 1
+    },
+    {
+      "case": "c2-missing-variant",
+      "method": "rules",
+      "run": 1,
+      "gold": 3,
+      "found": 3,
+      "missed": [],
+      "invented": [],
+      "applicabilityConfusion": [],
+      "ambiguous": [],
+      "citationsValid": 3,
+      "citations": 3,
+      "discardedNotInBrief": 0,
+      "ms": 0
+    },
+    {
+      "case": "c3-svg-omitted-asset",
+      "method": "rules",
+      "run": 1,
+      "gold": 2,
+      "found": 0,
+      "missed": [
+        "As agreed, you'll get the emblem as a vector file (SVG).",
+        "The badge comes as an SVG as well."
+      ],
+      "invented": [],
+      "applicabilityConfusion": [],
+      "ambiguous": [
+        "Please keep the files ready for our printer. — not extracted"
+      ],
+      "citationsValid": 0,
+      "citations": 0,
+      "discardedNotInBrief": 0,
+      "ms": 0
+    },
+    {
+      "case": "c4-misleading-name",
+      "method": "rules",
+      "run": 1,
+      "gold": 3,
+      "found": 0,
+      "missed": [
+        "Instagram story graphic, PNG, 1080×1920 px",
+        "Square post, JPG, 1080 by 1080",
+        "Thumbnail `thumb.png` at 400 x 400"
+      ],
+      "invented": [],
+      "applicabilityConfusion": [],
+      "ambiguous": [],
+      "citationsValid": 0,
+      "citations": 0,
+      "discardedNotInBrief": 0,
+      "ms": 1
+    },
+    {
+      "case": "c5-approved-older",
+      "method": "rules",
+      "run": 1,
+      "gold": 2,
+      "found": 2,
+      "missed": [],
+      "invented": [],
+      "applicabilityConfusion": [],
+      "ambiguous": [],
+      "citationsValid": 2,
+      "citations": 2,
+      "discardedNotInBrief": 0,
+      "ms": 1
+    },
+    {
+      "case": "c6-conflict",
+      "method": "rules",
+      "run": 1,
+      "gold": 3,
+      "found": 3,
+      "missed": [],
+      "invented": [],
+      "applicabilityConfusion": [],
+      "ambiguous": [],
+      "citationsValid": 3,
+      "citations": 3,
+      "discardedNotInBrief": 0,
+      "ms": 0
+    },
+    {
+      "case": "c7-unsupported-source",
+      "method": "rules",
+      "run": 1,
+      "gold": 2,
+      "found": 2,
+      "missed": [],
+      "invented": [],
+      "applicabilityConfusion": [],
+      "ambiguous": [],
+      "citationsValid": 2,
+      "citations": 2,
+      "discardedNotInBrief": 0,
+      "ms": 1
+    },
+    {
+      "case": "c7b-unsupported-brief",
+      "method": "rules",
+      "run": 1,
+      "gold": 0,
+      "found": 0,
+      "missed": [],
+      "invented": [],
+      "applicabilityConfusion": [],
+      "ambiguous": [],
+      "citationsValid": 0,
+      "citations": 0,
+      "discardedNotInBrief": 0,
+      "ms": 0
+    },
+    {
+      "case": "c8-optional",
+      "method": "rules",
+      "run": 1,
+      "gold": 3,
+      "found": 1,
+      "missed": [
+        "The printed menu as `menu.pdf`.",
+        "An animated teaser `menu-teaser.gif`."
+      ],
+      "invented": [],
+      "applicabilityConfusion": [],
+      "ambiguous": [
+        "We might want a QR code version later. — not extracted"
+      ],
+      "citationsValid": 1,
+      "citations": 1,
+      "discardedNotInBrief": 0,
+      "ms": 0
+    }
+  ],
+  "invariants": [
+    {
+      "id": "t1-rename-and-update-refs (c3)",
+      "ok": true,
+      "detail": "per-line outcomes same: true; renamed emblem still fails: true; badge fails: false; readiness Fix before sending"
+    },
+    {
+      "id": "t2-reorder-brief (c1)",
+      "ok": true,
+      "detail": "same extracted set: true; readiness Fix before sending → Fix before sending"
+    },
+    {
+      "id": "t3-paraphrase-requirement (c2)",
+      "ok": false,
+      "detail": "fixed rules still found the mono wordmark promise: false; readiness Needs your review"
+    },
+    {
+      "id": "t4-add-unrelated-files (c2)",
+      "ok": true,
+      "detail": "per-line outcomes same: true; readiness Fix before sending → Fix before sending"
+    },
+    {
+      "id": "t5a-move-dependency-inside (c3)",
+      "ok": false,
+      "detail": "emblem fails: false; badge fails: false; readiness Fix before sending"
+    },
+    {
+      "id": "t5b-move-dependency-outside (c3)",
+      "ok": true,
+      "detail": "emblem fails: true; badge now fails: true"
+    },
+    {
+      "id": "t6-change-verified-artifact (c4)",
+      "ok": true,
+      "detail": "square post verified → failed; earlier run reported current: false; thumbnail verified → verified"
+    },
+    {
+      "id": "t7-add-missing-artifact (c2)",
+      "ok": false,
+      "detail": "mono not-found-in-scope → verified; primary needs-review → needs-review; notes verified → verified; readiness Needs your review; diff resolved 1, introduced 0"
+    },
+    {
+      "id": "t8-interrupt-run (c1)",
+      "ok": true,
+      "detail": "state cancelled; readiness Could not complete check"
+    },
+    {
+      "id": "t9a-symlink-in-delivery (c1)",
+      "ok": true,
+      "detail": "readiness Needs your review"
+    },
+    {
+      "id": "t9b-brief-removed (c1)",
+      "ok": true,
+      "detail": "readiness Fix before sending"
+    },
+    {
+      "id": "t9c-zero-requirements (c8)",
+      "ok": true,
+      "detail": "readiness Needs your review"
+    },
+    {
+      "id": "t10-recheck-keeps-confirmed-set (c8)",
+      "ok": true,
+      "detail": "ids and ticks identical: true; favicon still unticked: true; favicon checked anyway: false; newly introduced findings: 0"
+    }
+  ]
+}

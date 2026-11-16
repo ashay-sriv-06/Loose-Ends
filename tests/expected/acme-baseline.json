@@ -1,0 +1,12 @@
+{
+  "_note": "Independent answer key for the synthetic demo project. Lives outside every scanned folder; the application never reads it.",
+  "display": "fix-before-sending",
+  "problems": [
+    { "kind": "missing-required-file", "outcome": "not-found-in-scope", "mentions": "-dark.svg" },
+    { "kind": "reference-outside-delivery", "outcome": "failed", "mentions": "outside the folder" },
+    { "kind": "approval-mismatch", "outcome": "failed", "mentions": "version 7" }
+  ],
+  "verifiedRequired": 2,
+  "blocking": 3,
+  "correctedDisplay": "ready-on-checked-items"
+}

@@ -1,0 +1,34 @@
+{
+  "checkFormatVersion": "2.0.0",
+  "status": "static-pass",
+  "target": {
+    "skillName": "loose-ends"
+  },
+  "catalog": {
+    "checkedVersion": "2.2.0"
+  },
+  "files": [
+    {
+      "path": "references/checks.md",
+      "sha256": "78d657d35c15018b4a4e71c25a30dbf021c7facdb8060705c94eb2df66cdb394"
+    },
+    {
+      "path": "references/disclosures.md",
+      "sha256": "f907b92a66a2482d466fbe87c0bdee45a6bdaf24efdc90abdcf241604083812a"
+    },
+    {
+      "path": "references/output-contract.md",
+      "sha256": "e38ad763aae61afc8fe81c36b467d5a90eca4d5c4211e0f9dc3dc01cd0ec2bb9"
+    },
+    {
+      "path": "SKILL.md",
+      "sha256": "e455d763478fdeadc3991904036c299374f571ef49850241efcee400e8b96e24"
+    }
+  ],
+  "summary": {
+    "errors": 0,
+    "warnings": 0,
+    "info": 0
+  },
+  "diagnostics": []
+}

@@ -1,0 +1,102 @@
+[
+  {
+    "sel": ".lede",
+    "ratio": 5.79,
+    "size": 16
+  },
+  {
+    "sel": ".fine",
+    "ratio": 5.79,
+    "size": 12
+  },
+  {
+    "sel": ".why",
+    "ratio": 6.37,
+    "size": 13.5
+  },
+  {
+    "sel": ".next",
+    "ratio": 15.75,
+    "size": 13.5
+  },
+  {
+    "sel": ".next-label",
+    "ratio": 5.57,
+    "size": 11
+  },
+  {
+    "sel": ".affected .mono",
+    "ratio": 13.3,
+    "size": 12.5
+  },
+  {
+    "sel": ".tally span",
+    "ratio": 5.36,
+    "size": 12.5
+  },
+  {
+    "sel": ".tally .n-bad",
+    "ratio": 5.36,
+    "size": 12.5
+  },
+  {
+    "sel": ".group-title",
+    "ratio": 5.79,
+    "size": 11.5
+  },
+  {
+    "sel": ".chip.tone-bad",
+    "ratio": 4.57,
+    "size": 11.5
+  },
+  {
+    "sel": ".chip.tone-warn",
+    "ratio": -1,
+    "size": 0
+  },
+  {
+    "sel": ".chip.tone-neutral",
+    "ratio": 13.3,
+    "size": 11.5
+  },
+  {
+    "sel": ".quiet-link",
+    "ratio": 15.75,
+    "size": 13
+  },
+  {
+    "sel": ".status h2",
+    "ratio": 5.36,
+    "size": 24
+  },
+  {
+    "sel": ".btn.primary",
+    "ratio": 6.08,
+    "size": 13
+  },
+  {
+    "sel": ".pick-change",
+    "ratio": -1,
+    "size": 0
+  },
+  {
+    "sel": ".summary-item .mono",
+    "ratio": 14.33,
+    "size": 12.5
+  },
+  {
+    "sel": ".history-item .fine",
+    "ratio": 5.38,
+    "size": 12
+  },
+  {
+    "sel": ".demo-tag",
+    "ratio": 6.37,
+    "size": 12
+  },
+  {
+    "sel": ".read-label",
+    "ratio": -1,
+    "size": 0
+  }
+]

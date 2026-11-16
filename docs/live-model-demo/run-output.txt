@@ -1,0 +1,35 @@
+{"extract_seconds": 17.6, "mode": "model-assisted", "model": {"configured": true, "provider": "ollama", "name": "qwen3.5:4b", "used": true, "added": 5, "alsoFoundByRules": 2, "refined": 2, "discarded": 0, "ms": 17536}}
+  rule-based required    authoritative file-included     kickoff-email.md:7 | For the handover we're counting on the hero poster as a PDF we || hero poster
+  rule-based conditional authoritative file-included     kickoff-email.md:10 | Should the tasting event go ahead in April, we will also need  || invitation card [if: Should the tasting event go ahead in Apr]
+  model      required    authoritative file-included     kickoff-email.md:8 | It would really help to get the poster artwork as an SVG too,  || poster artwork
+  model      required    conflicting   image-dimensions  kickoff-email.md:9 | Could the square social tile come in at 1080 x 1080? Instagram || square social tile 1080x1080
+  model      optional    authoritative manual            kickoff-email.md:11 | If you end up with spare time, an animated version of the tile || 
+  model      required    authoritative manual            kickoff-email.md:12 | One request from our web person: nothing in the files should p || 
+  model      required    conflicting   image-dimensions  follow-up.md:3 | Change of plan on the tile — please make the square social til || square social tile 1200x1200
+ model conflicts: [('Could the square social tile c', 'Change of plan on the tile — p', 'square social tile size')]
+ deterministic questions: ['Two documents disagree about the same deliverable. Which one should Loose Ends follow?']
+ notices: []
+RUN completed | Fix before sending | extractionMode model ollama:qwen3.5:4b
+  not-found-in-scope  hero poster (PDF) was promised but is not in the folder you’re sending || No match inside the delivery or anywhere else Loose Ends was allowed to look.
+  not-found-in-scope  invitation card (PDF) was promised but is not in the folder you’re sen || No match inside the delivery or anywhere else Loose Ends was allowed to look.
+  not-found-in-scope  poster artwork (SVG) was promised but is not in the folder you’re send || No match inside the delivery or anywhere else Loose Ends was allowed to look.
+  scope-conflict      Two documents disagree — kickoff-email.md says: “Could the square soci || “Could the square social tile come in at 1080 x 1080? Instagram is fussy.” (Notes/kickoff-
+  needs-review        This promise needs a human look. || Not inspected.
+  needs-review        This promise needs a human look. || Not inspected.
+  scope-conflict      Two documents disagree — follow-up.md says: “Change of plan on the til || “Change of plan on the tile — please make the square social tile 1200 x 1200 instead.” (No
+  failed              This graphic uses an image that cannot be found. || Send/poster-art.svg contains the reference “../Scratch/leaf.png”. It resolves to Scratch/l
+  verified            2 delivered files are of a kind that carries its own content. || Images, PDFs and plain text: northwind-hero-A2-print.pdf, social-tile.png.
+ASSIST 16.8 s {'model': 'ollama:qwen3.5:4b', 'discarded': 0, 'error': None}
+  explain: hero poster (PDF) was promised but is no => The hero poster PDF was not found in the delivery or any files Loose Ends reviewed. You must ensure the client receives the required handover assets.
+  explain: invitation card (PDF) was promised but i => An April tasting event invitation card PDF was not found in the delivery or any files Loose Ends reviewed. You must include this asset in the final folder before sending it to the client.
+  explain: poster artwork (SVG) was promised but is => The poster artwork SVG file was not found in the delivery or any files Loose Ends reviewed. You must provide the vector version requested by the sign shop.
+  explain: Two documents disagree — kickoff-email.m => A note in Notes/kickoff-email.md requesting a 1080 x 1080 square social tile conflicts with another document regarding the same deliverable. You must specify which document takes precedence so Loose Ends can verify the requirement.
+  explain: This promise needs a human look. => An animated version of the tile was not inspected in the files. You must review this request to confirm if it meets the brief requirements.
+  explain: This promise needs a human look. => A request from the web team regarding local image paths was not inspected in the files. You must verify that no files point to images on a local drive as required by the brief.
+  explain: Two documents disagree — follow-up.md sa => A note in Notes/follow-up.md requesting a 1200 x 1200 square social tile conflicts with another document regarding the same deliverable. You must specify which document takes precedence so Loose Ends can verify the requirement.
+  explain: This graphic uses an image that cannot b => The file Send/poster-art.svg references an image at Scratch/leaf.png that does not exist in the directory structure. You must resolve this missing reference to prevent display gaps.
+  candidate: hero poster (PDF) was promised but is no => Send/northwind-hero-A2-print.pdf
+  candidate: poster artwork (SVG) was promised but is => Send/poster-art.svg
+run unchanged after assist: True
+confirmed set restored: True {'briefUnchanged': True, 'mode': 'model', 'model': 'ollama:qwen3.5:4b'} 9
+rules-only would have found: 2

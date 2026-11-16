@@ -1,0 +1,13 @@
+node_modules
+dist
+.data
+fixtures/acme
+fixtures/tmp
+.DS_Store
+*.log
+fixtures/edge
+.data-server.log
+vendor/
+.claude/
+.env
+.env.*

@@ -1,0 +1,8 @@
+a7a8d8d1f9a0477c709c6789e48b8574ecd5bf7efa16c2a8352905208d5adeb5  loose-ends-proposal.pdf
+5e164a0666282d4101dc2f396977ada2172bf46b04a1edda3ff270595b198324  loose-ends-skill.zip
+1851724ecf3f8f9034e9c35bab6179acd62196a4c49f8ce16b8797746117b937  checkpoint-1/loose-ends-proposal.pdf
+022fb3f10c37df84ebf31857cd0bb15844cadd8a4196cfbe9e5f3d8c642c47b7  checkpoint-1/loose-ends-skill.zip
+3670c8ac0b71dafab1a29e9a41a595f71e05db71710e76d8fea965de6300df17  preserved-2026-11-15/FINAL.md
+a7a8d8d1f9a0477c709c6789e48b8574ecd5bf7efa16c2a8352905208d5adeb5  preserved-2026-11-15/loose-ends-proposal.pdf
+5e164a0666282d4101dc2f396977ada2172bf46b04a1edda3ff270595b198324  preserved-2026-11-15/loose-ends-skill.zip
+d7866b99b26a0836fcbc037b34368693f0f40b8b5b246b62f715c9b40a531c59  preserved-2026-11-15/skill-validation.txt

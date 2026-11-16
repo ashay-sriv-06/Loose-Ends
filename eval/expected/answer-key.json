@@ -1,0 +1,123 @@
+{
+  "_note": "Written before the application was run on these cases (2026-11-15). Lives outside every scanned folder: cases are generated into an OS temp directory. 'blocking' means failed or not-found-in-scope. Do not edit to make a failure disappear; record disagreements in docs/evaluation.md.",
+  "cases": {
+    "c1-brand-kit": {
+      "readiness": "Ready on checked items",
+      "gold": [
+        { "line": "Primary logo as `lumière-logo.svg`.", "applicability": "required", "expect": "verified", "type": "file-included" },
+        { "line": "Inverse logo as lumière-logo-inverse.svg for dark backgrounds.", "applicability": "required", "expect": "verified", "type": "file-included" },
+        { "line": "Social banner `banner – wide.png` at 1200×630 px.", "applicability": "required", "expect": "verified", "type": "image-dimensions" },
+        { "line": "The brand guide as `Brand Guide.pdf`.", "applicability": "required", "expect": "verified", "type": "file-included" },
+        { "line": "All files must be self-contained.", "applicability": "required", "expect": "verified", "type": "references-resolve" }
+      ],
+      "notCommitments": ["Agreed on the call, 3 March. Invoice goes out on delivery.", "Parking is free on Saturdays."],
+      "ambiguous": [],
+      "boundary": [{ "source": "Final Export/Logos/lumière-logo.svg", "expect": "none" }]
+    },
+    "c2-missing-variant": {
+      "readiness": "Fix before sending",
+      "gold": [
+        { "line": "wordmark_primary.svg must be in the package.", "applicability": "required", "expect": "verified", "type": "file-included" },
+        { "line": "wordmark_mono.svg (single-colour version) is required as well.", "applicability": "required", "expect": "blocking", "type": "file-included", "mustMention": "wip/wordmark_mono.svg" },
+        { "line": "Supply usage_notes.md.", "applicability": "required", "expect": "verified", "type": "file-included" }
+      ],
+      "notCommitments": ["WORDMARK PROJECT - DELIVERABLES", "Payment within 30 days."],
+      "ambiguous": [],
+      "boundary": []
+    },
+    "c3-svg-omitted-asset": {
+      "readiness": "Fix before sending",
+      "gold": [
+        { "line": "As agreed, you'll get the emblem as a vector file (SVG).", "applicability": "required", "expect": "verified", "type": "file-included" },
+        { "line": "The badge comes as an SVG as well.", "applicability": "required", "expect": "verified", "type": "file-included" }
+      ],
+      "notCommitments": ["Hej Tove,", "Mvh, Jonas"],
+      "ambiguous": ["Please keep the files ready for our printer."],
+      "boundary": [
+        { "source": "Deliverables (client)/vector/emblem.svg", "expect": "failed", "target": "assets/grain texture.png" },
+        { "source": "Deliverables (client)/vector/badge.svg", "expect": "none" }
+      ]
+    },
+    "c4-misleading-name": {
+      "readiness": "Fix before sending",
+      "gold": [
+        { "line": "Instagram story graphic, PNG, 1080×1920 px", "applicability": "required", "expect": "failed", "type": "image-dimensions" },
+        { "line": "Square post, JPG, 1080 by 1080", "applicability": "required", "expect": "verified", "type": "image-dimensions" },
+        { "line": "Thumbnail `thumb.png` at 400 x 400", "applicability": "required", "expect": "verified", "type": "image-dimensions" }
+      ],
+      "notCommitments": ["Summer campaign assets", "Timeline: first drafts Friday."],
+      "ambiguous": [],
+      "boundary": []
+    },
+    "c5-approved-older": {
+      "readiness": "Fix before sending",
+      "gold": [
+        { "line": "Deliver the client-approved packaging dieline as `packaging-dieline.pdf`.", "applicability": "required", "expect": "failed", "type": "approved-version" },
+        { "line": "Deliver the approved front label `label-front.pdf`.", "applicability": "required", "expect": "verified", "type": "approved-version" }
+      ],
+      "notCommitments": [],
+      "ambiguous": [],
+      "boundary": []
+    },
+    "c6-conflict": {
+      "readiness": "Needs your review",
+      "gold": [
+        { "line": "Hero banner `hero.png` at 1600×900 px.", "applicability": "required", "expect": "scope-conflict", "type": "image-dimensions" },
+        { "line": "The hero banner `hero.png` must be 1920×1080 px.", "applicability": "required", "expect": "scope-conflict", "type": "image-dimensions" },
+        { "line": "Footer logo `footer-logo.svg`.", "applicability": "required", "expect": "verified", "type": "file-included" }
+      ],
+      "notCommitments": [],
+      "ambiguous": [],
+      "boundary": [],
+      "decisions": {
+        "follow scope/Change request 02.md": { "readiness": "Ready on checked items", "hero": "verified" },
+        "follow scope/SOW.md": { "readiness": "Fix before sending", "hero": "failed" }
+      }
+    },
+    "c7-unsupported-source": {
+      "readiness": "Needs your review",
+      "readinessMustNotBe": "Ready on checked items",
+      "gold": [
+        { "line": "Print-ready `poster.pdf`.", "applicability": "required", "expect": "verified", "type": "file-included" },
+        { "line": "The editable source `poster.indd` must be included.", "applicability": "required", "expect": "not-blocking", "type": "file-included" }
+      ],
+      "notCommitments": [],
+      "ambiguous": [],
+      "boundary": []
+    },
+    "c7b-unsupported-brief": {
+      "readiness": "Could not complete check",
+      "readinessMustNotBe": "Ready on checked items",
+      "gold": [],
+      "notCommitments": [],
+      "ambiguous": [],
+      "boundary": []
+    },
+    "c8-optional": {
+      "readiness": "Ready on checked items",
+      "gold": [
+        { "line": "The printed menu as `menu.pdf`.", "applicability": "required", "expect": "verified", "type": "file-included" },
+        { "line": "An animated teaser `menu-teaser.gif`.", "applicability": "optional", "expect": "open-not-blocking", "type": "file-included" },
+        { "line": "Optional: a favicon `favicon.png`.", "applicability": "optional", "expect": "open-not-blocking", "type": "file-included" }
+      ],
+      "notCommitments": ["# Menu redesign"],
+      "ambiguous": ["We might want a QR code version later."],
+      "boundary": []
+    }
+  },
+  "transformations": {
+    "t1-rename-and-update-refs (c3)": "Irrelevant change. Same outcome per gold line; emblem still fails the boundary check under its new name; badge still has no boundary failure.",
+    "t2-reorder-brief (c1)": "Irrelevant change. Rules extraction returns the same set of promise texts; readiness unchanged.",
+    "t3-paraphrase-requirement (c2)": "Meaning preserved. Extraction must still produce a promise for wordmark_mono.svg, and the result must still be Fix before sending.",
+    "t4-add-unrelated-files (c2)": "Irrelevant change. Same outcome per gold line; readiness unchanged.",
+    "t5a-move-dependency-inside (c3)": "Meaningful change. Emblem boundary failure disappears; readiness becomes Ready on checked items. Badge unchanged.",
+    "t5b-move-dependency-outside (c3)": "Meaningful change. Badge now fails the boundary check; emblem still fails.",
+    "t6-change-verified-artifact (c4)": "Meaningful change. Earlier run is reported not current; new run: square post failed; thumbnail still verified.",
+    "t7-add-missing-artifact (c2)": "Meaningful change. Mono wordmark becomes verified; readiness Ready on checked items; other lines unchanged.",
+    "t8-interrupt-run (c1)": "Run state is cancelled and readiness is not Ready on checked items.",
+    "t9a-symlink-in-delivery (c1)": "Incomplete evidence. Readiness is not Ready on checked items.",
+    "t9b-brief-removed (c1)": "Incomplete evidence. Readiness is not Ready on checked items.",
+    "t9c-zero-requirements (c8)": "Incomplete evidence. Readiness is not Ready on checked items.",
+    "t10-recheck-keeps-confirmed-set (c8)": "User unticked the favicon promise. After an unrelated file is added and the check is run again with the same set, the promise is still unticked, requirement ids are identical, and nothing is reported as newly introduced."
+  }
+}

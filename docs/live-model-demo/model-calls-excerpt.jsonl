@@ -1,0 +1,12 @@
+{"at":"2026-11-16T05:45:40.615Z","provider":"ollama","model":"qwen3.5:4b","purpose":"conflicts","outcome":"ok","ms":13882}
+{"at":"2026-11-16T05:45:43.399Z","provider":"ollama","model":"qwen3.5:4b","purpose":"extract","outcome":"ok","ms":3727}
+{"at":"2026-11-16T05:45:44.348Z","provider":"ollama","model":"qwen3.5:4b","purpose":"conflicts","outcome":"ok","ms":948}
+{"at":"2026-11-16T05:45:55.926Z","provider":"ollama","model":"qwen3.5:4b","purpose":"explain","outcome":"ok","ms":11084}
+{"at":"2026-11-16T05:45:57.135Z","provider":"ollama","model":"qwen3.5:4b","purpose":"candidate-files","outcome":"ok","ms":1209}
+{"at":"2026-11-16T05:46:29.472Z","provider":"ollama","model":"qwen3.5:4b","purpose":"extract","outcome":"ok","ms":10929}
+{"at":"2026-11-16T05:46:42.014Z","provider":"ollama","model":"qwen3.5:4b","purpose":"extract","outcome":"ok","ms":23420}
+{"at":"2026-11-16T05:46:42.376Z","provider":"ollama","model":"qwen3.5:4b","purpose":"conflicts","outcome":"ok","ms":12903}
+{"at":"2026-11-16T05:46:45.133Z","provider":"ollama","model":"qwen3.5:4b","purpose":"extract","outcome":"ok","ms":3118}
+{"at":"2026-11-16T05:46:45.954Z","provider":"ollama","model":"qwen3.5:4b","purpose":"conflicts","outcome":"ok","ms":821}
+{"at":"2026-11-16T05:46:56.897Z","provider":"ollama","model":"qwen3.5:4b","purpose":"explain","outcome":"ok","ms":10624}
+{"at":"2026-11-16T05:46:58.141Z","provider":"ollama","model":"qwen3.5:4b","purpose":"candidate-files","outcome":"ok","ms":1244}

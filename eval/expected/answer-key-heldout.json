@@ -1,0 +1,88 @@
+{
+  "_note": "Held-out batch. Written 2026-11-15 after the fixes prompted by the first batch, and before the application was run on these cases. Results on this batch are reported as first observed; any later fix is listed separately.",
+  "cases": {
+    "h1-kit-one-sentence": {
+      "readiness": "Ready on checked items",
+      "gold": [
+        { "line": "Final files: logo_colour.svg, logo_white.svg and the style sheet (styleguide.pdf).", "applicability": "required", "expect": "verified", "type": "file-included" }
+      ],
+      "notCommitments": ["Thanks for the quick turnaround last time."],
+      "ambiguous": [],
+      "boundary": []
+    },
+    "h2-missing-in-list-sentence": {
+      "readiness": "Fix before sending",
+      "gold": [
+        { "line": "Please send icon-16.png, icon-32.png and icon-64.png.", "applicability": "required", "expect": "blocking", "type": "file-included", "mustMention": "icon-64.png" }
+      ],
+      "notCommitments": [],
+      "ambiguous": [],
+      "boundary": []
+    },
+    "h3-markdown-outside-image": {
+      "readiness": "Fix before sending",
+      "gold": [
+        { "line": "The handover notes go in `README.md`.", "applicability": "required", "expect": "verified", "type": "file-included" }
+      ],
+      "notCommitments": [],
+      "ambiguous": [],
+      "boundary": [
+        { "source": "納品/README.md", "expect": "failed", "target": "shots/hero.png" },
+        { "source": "納品/CHANGES.md", "expect": "none" }
+      ]
+    },
+    "h4-wrong-size-plain-name": {
+      "readiness": "Fix before sending",
+      "gold": [
+        { "line": "Leaderboard banner, JPG, 970 x 250", "applicability": "required", "expect": "failed", "type": "image-dimensions" },
+        { "line": "Avatar as `avatar.png`, 256×256", "applicability": "required", "expect": "verified", "type": "image-dimensions" }
+      ],
+      "notCommitments": [],
+      "ambiguous": [],
+      "boundary": []
+    },
+    "h5-signed-off-by-version": {
+      "readiness": "Fix before sending",
+      "gold": [
+        { "line": "Send the signed-off brochure PDF.", "applicability": "required", "expect": "blocking", "type": "approved-version" },
+        { "line": "The approved flyer as `flyer.pdf`.", "applicability": "required", "expect": "needs-review", "type": "approved-version" }
+      ],
+      "notCommitments": [],
+      "ambiguous": [],
+      "boundary": []
+    },
+    "h6-quantity-conflict": {
+      "readiness": "Needs your review",
+      "readinessMustNotBe": "Ready on checked items",
+      "gold": [
+        { "line": "Deliver three icon sizes.", "applicability": "required", "expect": "unresolved", "type": "manual" },
+        { "line": "Only two icon sizes are needed now.", "applicability": "required", "expect": "unresolved", "type": "manual" }
+      ],
+      "notCommitments": [],
+      "ambiguous": [],
+      "boundary": []
+    },
+    "h7-damaged-required-image": {
+      "readiness": "Needs your review",
+      "readinessMustNotBe": "Ready on checked items",
+      "gold": [
+        { "line": "Layered artwork `mural.psd`.", "applicability": "required", "expect": "not-blocking", "type": "file-included" },
+        { "line": "Mural preview `mural.png` at 2000×1000.", "applicability": "required", "expect": "unable-to-inspect", "type": "image-dimensions" }
+      ],
+      "notCommitments": [],
+      "ambiguous": [],
+      "boundary": []
+    },
+    "h8-optional-in-prose": {
+      "readiness": "Ready on checked items",
+      "gold": [
+        { "line": "Poster `poster-a3.pdf`", "applicability": "required", "expect": "verified", "type": "file-included" },
+        { "line": "Stickers sheet `stickers.pdf` (bonus)", "applicability": "optional", "expect": "open-not-blocking", "type": "file-included" },
+        { "line": "If budget allows, a short animation (`intro.mp4`) would be welcome.", "applicability": "optional", "expect": "open-not-blocking", "type": "file-included" }
+      ],
+      "notCommitments": ["Kickoff was on Monday."],
+      "ambiguous": [],
+      "boundary": []
+    }
+  }
+}
